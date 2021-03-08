@@ -24,6 +24,36 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+        <!--insert form for character and length selection-->
+        <form>
+          <label for="passwordLength">Length (between 8 and 128 characters):</label>
+          <input type="number" required id="passwordLength" name="passwordLength" min="8" max="128" value="8">
+
+          <p>Lowercase characters: </p>
+          <input type="radio" required id="lowerCaseYes" name="lowerCase" value="lowerCaseYes">
+          <label for="lowerCaseYes">Yes</label>
+          <input type="radio" id="lowerCaseNo" name="lowerCase" value="lowerCaseNo">
+          <label for="lowerCaseNo">No</label>
+
+          <p>Uppercase characters:</p>
+          <input type="radio" required id="upperCaseYes" name="upperCase" value="upperCaseYes">
+          <label for="upperCaseYes">Yes</label>
+          <input type="radio" id="upperCaseNo" name="upperCase" value="upperCaseNo">
+          <label for="upperCaseNo">No</label>
+
+          <p>Numbers (0-9):</p>
+          <input type="radio" required id="numbersYes" name="numbers" value="numbersYes">
+          <label for="numbersYes">Yes</label>
+          <input type="radio" id="numbersNo" name="numbers" value="numbersNo">
+          <label for="numbersNo">No</label>
+
+          <p>Special characters (i.e. @ # !):</p>
+          <input type="radio" required id="specialCharYes" name="specialChar" value="specialCharYes">
+          <label for="specialCharYes">Yes</label>
+          <input type="radio" id="specialCharNo" name="specialChar" value="specialCharNo">
+          <label for="specialCharNo">No</label>
+
+        </form>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
