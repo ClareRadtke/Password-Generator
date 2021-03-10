@@ -2,11 +2,12 @@
 An application that generates random passwords based on criteria selected by the user.
 
 <!--- Deployed link ---> 
+![screenshot of my application](link.PNG?raw=true "passwordGeneratorScreenshot)
 
 Requirements for this application:
 
 Functionality:
-  [] Button click presents a list of prompts for password criteria
+  [] Generate Password button click presents a list of prompts for password criteria
   [] Password criteria is selectable
   [] Each prompt selection is validated
   [] At least one character type should be selected

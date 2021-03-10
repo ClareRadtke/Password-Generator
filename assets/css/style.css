@@ -100,6 +100,40 @@ button[disabled]{
   background: #c0c7cf;
 }
 
+/* Popup Form for critera */
+.form-popup {
+  min-width: 275px;
+  width: 350px;
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  left: 40%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 350px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container .btn {
+  display: inline;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 15px;
+  border: none;
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover {
+  opacity: 1;
+}
+
 .float-right {
   float: right;
 }
