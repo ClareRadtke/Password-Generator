@@ -1,7 +1,7 @@
 # Password-Generator
 An application that generates random passwords based on criteria selected by the user.
 
-<!--- Deployed link ---> 
+[Password Generator](https://clareradtke.github.io/Password-Generator/)
 <!-- ![screenshot of my application](link.PNG?raw=true "passwordGeneratorScreenshot) -->
 
 Requirements for this application:
@@ -11,8 +11,8 @@ Functionality:
   [x] Password criteria is selectable
   [] Each prompt selection is validated
   [x] At least one character type should be selected
-  [] Password is generated that matches the selected criteria
-  [] Generated password is displayed in an alert or written to the page
+  [x] Password is generated that matches the selected criteria
+  [x] Generated password is displayed in an alert or written to the page
 
 Password criteria:
   [x] Password length can be between 8 and 128 characters inclusive
@@ -23,6 +23,6 @@ Password criteria:
     [x] Special characters
 
 Additional requirements:
-  [] No errors produced in Chrome DevTools during use of application
-  [] Password generator resembles the mock-up provided by Monash Coding Bootcamp:
+  [x] No errors produced in Chrome DevTools during use of application
+  [x] Password generator resembles the mock-up provided by Monash Coding Bootcamp:
 ![screenshot of the mockup application](assets/images/mockupScreenshot.PNG?raw=true "mockupScreenshot")
