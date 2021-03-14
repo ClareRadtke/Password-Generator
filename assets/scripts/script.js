@@ -51,9 +51,13 @@ const criteriaForm = document.getElementById("form");
 criteriaForm.addEventListener("submit", function (event) {
   event.preventDefault();
   getCriteriaFormValues();
-  closeForm();
-  // TODO: Clear form
-  writePassword();
+  if (isInputValid(data)) {
+    closeForm();
+    // TODO: Clear form
+    writePassword();
+  } else {
+    alert("Please select at least 1 of the criteria options for your password");
+  }
 });
 
 // Function to retrieve the radio button inputs on the Criteria form
@@ -100,6 +104,10 @@ function getCriteriaFormValues() {
   getUpperCaseValue();
   getNumbersValue();
   getSpecialCharsValue();
+}
+
+function isInputValid(data) {
+  return data.lowerCase || data.upperCase || data.numbers || data.specialChar;
 }
 
 function generatePassword(opts) {
