@@ -1,6 +1,6 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
-var data = {
+const generateBtn = document.querySelector("#generate");
+const data = {
   length: null,
   lowerCase: null,
   upperCase: null,
@@ -9,8 +9,8 @@ var data = {
 };
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword(data);
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword(data);
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
@@ -24,7 +24,7 @@ function closeForm() {
 }
 
 function criteriaPrompts() {
-  var length = prompt(
+  const length = prompt(
     "How long would you like the password?\n(between 8 and 128 characters)",
     ""
   );
@@ -61,8 +61,8 @@ criteriaForm.addEventListener("submit", function (event) {
 // Function to retrieve the radio button inputs on the Criteria form
 function getCriteriaFormValues() {
   function getLowerCaseValue() {
-    var lowerCaseValue = document.getElementsByName("lowerCase");
-    for (var i = 0; i < lowerCaseValue.length; i++) {
+    const lowerCaseValue = document.getElementsByName("lowerCase");
+    for (let i = 0; i < lowerCaseValue.length; i++) {
       if (lowerCaseValue[i].checked) {
         console.log("Lower case values to be used " + lowerCaseValue[i].value);
         data.lowerCase = lowerCaseValue[i].value === "true";
@@ -70,8 +70,8 @@ function getCriteriaFormValues() {
     }
   }
   function getUpperCaseValue() {
-    var upperCaseValue = document.getElementsByName("upperCase");
-    for (var i = 0; i < upperCaseValue.length; i++) {
+    const upperCaseValue = document.getElementsByName("upperCase");
+    for (let i = 0; i < upperCaseValue.length; i++) {
       if (upperCaseValue[i].checked) {
         console.log("Upper case values to be used " + upperCaseValue[i].value);
         data.upperCase = upperCaseValue[i].value === "true";
@@ -79,8 +79,8 @@ function getCriteriaFormValues() {
     }
   }
   function getNumbersValue() {
-    var numbersValue = document.getElementsByName("numbers");
-    for (var i = 0; i < numbersValue.length; i++) {
+    const numbersValue = document.getElementsByName("numbers");
+    for (let i = 0; i < numbersValue.length; i++) {
       if (numbersValue[i].checked) {
         console.log("Number values to be used " + numbersValue[i].value);
         data.numbers = numbersValue[i].value === "true";
@@ -88,7 +88,7 @@ function getCriteriaFormValues() {
     }
   }
   function getSpecialCharsValue() {
-    var specialCharsValue = document.getElementsByName("specialChar");
+    const specialCharsValue = document.getElementsByName("specialChar");
     for (let i = 0; i < specialCharsValue.length; i++) {
       if (specialCharsValue[i].checked) {
         console.log(
@@ -133,13 +133,3 @@ function generatePassword(opts) {
   }
   return output;
 }
-
-// function generatePassword() {
-//   var length = 8,
-//     charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-//     retVal = "";
-//   for (var i = 0, n = charset.length; i < length; ++i) {
-//     retVal += charset.charAt(Math.floor(Math.random() * n));
-//   }
-//   return retVal;
-// }

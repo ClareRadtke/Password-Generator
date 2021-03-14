@@ -2,7 +2,7 @@
 An application that generates random passwords based on criteria selected by the user.
 
 [Password Generator](https://clareradtke.github.io/Password-Generator/)
-<!-- ![screenshot of my application](link.PNG?raw=true "passwordGeneratorScreenshot) -->
+![Screen recording of my application](assets/images/passwordGeneratorScreenRecording.gif "passwordGeneratorScreenshot")
 
 Requirements for this application:
 
@@ -25,4 +25,4 @@ Password criteria:
 Additional requirements:
   [x] No errors produced in Chrome DevTools during use of application
   [x] Password generator resembles the mock-up provided by Monash Coding Bootcamp:
-![screenshot of the mockup application](assets/images/mockupScreenshot.PNG?raw=true "mockupScreenshot")
+![screenshot of the mockup application](assets/images/mockupScreenshot.PNG "mockupScreenshot")
