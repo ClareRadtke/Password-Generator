@@ -29,8 +29,6 @@ function criteriaPrompts() {
     ""
   );
   let lengthValue = parseInt(length);
-  console.log(length, lengthValue);
-
   if (lengthValue >= 8 && lengthValue <= 128) {
     data.length = lengthValue;
     openForm();
@@ -111,7 +109,6 @@ function isInputValid(data) {
 }
 
 function generatePassword(opts) {
-  console.log(opts);
   const lowerCaseCharSet = "abcdefghijklmnopqrstuvwxyz";
   const upperCaseCharSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const numberCharSet = "0123456789";
@@ -129,7 +126,7 @@ function generatePassword(opts) {
   if (opts.specialChar) {
     superSet += specialCharSet;
   }
-  console.log(superSet);
+  console.log("Generating Password from character set:", superSet);
   let output = "";
   for (let i = 0; i < opts.length; i++) {
     output += superSet.charAt(Math.floor(Math.random() * superSet.length));
