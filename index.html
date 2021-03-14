@@ -25,36 +25,36 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <!--insert form for character and length selection-->
+        <!--insert form for character selection-->
         <div class="form-popup" id="criteriaForm">
-          <form class="form-container">
+          <form class="form-container" id="form">
             <p>Select the chatacter types you would like included in your password below:</p>
             <br>
             <p>Lowercase characters: </p>
-            <input type="radio" required id="lowerCaseYes" name="lowerCase" value="lowerCaseYes">
+            <input type="radio" required id="lowerCaseYes" name="lowerCase" value="true">
             <label for="lowerCaseYes">Yes</label>
-            <input type="radio" id="lowerCaseNo" name="lowerCase" value="lowerCaseNo">
+            <input type="radio" id="lowerCaseNo" name="lowerCase" value="false">
             <label for="lowerCaseNo">No</label>
             <br>
             <p>Uppercase characters:</p>
-            <input type="radio" required id="upperCaseYes" name="upperCase" value="upperCaseYes">
+            <input type="radio" required id="upperCaseYes" name="upperCase" value="true">
             <label for="upperCaseYes">Yes</label>
-            <input type="radio" id="upperCaseNo" name="upperCase" value="upperCaseNo">
+            <input type="radio" id="upperCaseNo" name="upperCase" value="false">
             <label for="upperCaseNo">No</label>
             <br>
             <p>Numbers (0-9):</p>
-            <input type="radio" required id="numbersYes" name="numbers" value="numbersYes">
+            <input type="radio" required id="numbersYes" name="numbers" value="true">
             <label for="numbersYes">Yes</label>
-            <input type="radio" id="numbersNo" name="numbers" value="numbersNo">
+            <input type="radio" id="numbersNo" name="numbers" value="false">
             <label for="numbersNo">No</label>
             <br>
             <p>Special characters (i.e. @ # !):</p>
-            <input type="radio" required id="specialCharYes" name="specialChar" value="specialCharYes">
+            <input type="radio" required id="specialCharYes" name="specialChar" value="true">
             <label for="specialCharYes">Yes</label>
-            <input type="radio" id="specialCharNo" name="specialChar" value="specialCharNo">
+            <input type="radio" id="specialCharNo" name="specialChar" value="false">
             <label for="specialCharNo">No</label>
             <br>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn" id="submitCriteria">Submit</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
           </form>
         </div>
