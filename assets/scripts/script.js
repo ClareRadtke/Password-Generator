@@ -124,8 +124,9 @@ function generatePassword(opts) {
   console.log(superSet);
   let output = "";
   for (let i = 0; i < opts.length; i++) {
-    // TODO create output
+    output += superSet.charAt(Math.floor(Math.random() * superSet.length));
   }
+  return output;
 }
 
 // function generatePassword() {
